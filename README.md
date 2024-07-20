@@ -1,6 +1,13 @@
+# Backend URL
+# https://github.com/Y4shr4j/food-delivery-app-backend
+
+
+
+
 # EatClub Clone
 
 EatClub Clone is a full-stack MERN (MongoDB, Express.js, React, Node.js) e-commerce application with a payment gateway integrated using Stripe. This application includes four user panels: General, Merchant, Admin, and Delivery, each providing distinct functionalities tailored to the respective roles.
+
 
 ## Tech Stack
 
@@ -52,3 +59,7 @@ To run this project, you will need to add the following environment variables to
 `REACT_APP_STRIPE_PUBLIC_KEY `
 
 `REACT_APP_BACKEND_URL `
+## Demo
+
+Insert gif or link to demo
+
