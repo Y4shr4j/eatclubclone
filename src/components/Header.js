@@ -110,7 +110,7 @@ const Header = () => {
                   )}
                   {user?.role === ROLE.GENERAL && (
                     <Link
-                      to={"/user-panel/my-orders"}
+                      to={"/user-panel/my-account"}
                       className="whitespace-nowrap hidden md:block hover:bg-slate-100 p-2"
                       onClick={() => setMenuDisplay((prev) => !prev)}
                     >

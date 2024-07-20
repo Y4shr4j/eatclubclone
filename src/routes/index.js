@@ -98,8 +98,8 @@ const router = createBrowserRouter([
             element: <AllProducts />,
           },
           {
-            path: "all-orders",
-            element: <AllOrder />,
+            path: "my-orders",
+            element: <MyOrders />,
           },
         ],
       },

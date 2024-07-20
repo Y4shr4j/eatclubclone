@@ -36,11 +36,10 @@ const MerchantPanel = () => {
                 <div>
                     <nav className='grid p-4'>
                         <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
-                        <Link to={"all-orders"} className='px-2 py-1 hover:bg-slate-100'>All Orders</Link>
+                        <Link to={"my-orders"} className='px-2 py-1 hover:bg-slate-100'>All Orders</Link>
                     </nav>
                 </div>
             </aside>
-
             <main className='w-full h-full p-2'>
                 <Outlet />
             </main>
