@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import loginIcons from '../assest/signin.gif'
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router-dom';
@@ -63,7 +62,11 @@ const Login = () => {
 
             <div className='bg-white p-5 w-full max-w-sm mx-auto'>
                     <div className='w-20 h-20 mx-auto'>
-                        <img src={loginIcons} alt='login icons'/>
+                    <img
+                    src="https://dwc6ndmngc4q3.cloudfront.net/20240620155323/assets/images/logo.png"
+                    alt="Brand Logo"
+                    
+                    />
                     </div>
 
                     <form className='pt-6 flex flex-col gap-2' onSubmit={handleSubmit}>

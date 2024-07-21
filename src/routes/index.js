@@ -4,23 +4,30 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import ForgotPassowrd from "../pages/ForgotPassowrd";
 import SignUp from "../pages/SignUp";
-import AdminPanel from "../pages/AdminPanel";
-import AllUsers from "../pages/AllUsers";
+
 import AllProducts from "../pages/AllProducts";
 import CategoryProduct from "../pages/CategoryProduct";
 import ProductDetails from "../pages/ProductDetails";
-import Cart from "../pages/Cart";
 import SearchProduct from "../pages/SearchProduct";
+
+import Cart from "../pages/Cart";
 import Success from "../pages/Success";
 import Cancel from "../pages/Cancel";
+
 import OrderPage from "../pages/OrderPage";
 import AllOrder from "../pages/AllOrder";
-import UserPanel from "../pages/UserPanel";
-import MyOrders from "../pages/OrderPage";
-import MyAccount from "../pages/MyAccount";
 
-import MerchantPanel from "../pages/MerchantPanel";
+import AdminPanel from "../pages/AdminPanel";
+
+import AllUsers from "../pages/AllUsers";
+import MyAccount from "../pages/MyAccount";
+import UserPanel from "../pages/UserPanel";
+
+import RestaurantPanel from "../pages/RestaurantPanel";
+import Restaurants from "../pages/AllRestaurant";
+
 import DeliveryPanel from "../pages/DeliveryPanel";
+import DeliveryMan from "../pages/AllDelivery";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +87,14 @@ const router = createBrowserRouter([
             element: <AllUsers />,
           },
           {
+            path: "all-restaurants",
+            element: <Restaurants />,
+          },
+          {
+            path: "all-delivery",
+            element: <DeliveryMan />,
+          },
+          {
             path: "all-products",
             element: <AllProducts />,
           },
@@ -90,16 +105,16 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "merchant-panel",
-        element: <MerchantPanel />,
+        path: "restaurant-panel",
+        element: <RestaurantPanel />,
         children: [
           {
             path: "all-products",
             element: <AllProducts />,
           },
           {
-            path: "all-orders",
-            element: <AllOrder />,
+            path: "my-orders",
+            element: <OrderPage />,
           },
         ],
       },
@@ -109,7 +124,7 @@ const router = createBrowserRouter([
         children: [
           {
             path: "my-orders",
-            element: <MyOrders />,
+            element: <OrderPage />,
           },
           {
             path: "my-account",
@@ -123,7 +138,7 @@ const router = createBrowserRouter([
         children: [
           {
             path: "my-orders",
-            element: <MyOrders />,
+            element: <OrderPage />,
           },
           {
             path: "my-account",

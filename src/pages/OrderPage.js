@@ -43,10 +43,7 @@ const OrderPage = () => {
                                 item?.productDetails.map((product,index)=>{
                                   return(
                                     <div key={product.productId+index} className='flex  gap-3 bg-slate-100'>
-                                        <img 
-                                          src={product.image[0]}
-                                          className='w-28 h-28 bg-slate-200 object-scale-down p-2'
-                                        />
+                                        <img src={product.image[0]} className='w-28 h-28 bg-slate-200 object-scale-down p-2'/>
                                         <div>
                                           <div className='font-medium text-lg text-ellipsis line-clamp-1'>{product.name}</div>
                                           <div className='flex items-center gap-5 mt-1'>

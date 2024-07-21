@@ -119,11 +119,11 @@ const Header = () => {
                   )}
                   {user?.role === ROLE.RESTAURANT && (
                     <Link
-                      to={"/merchant-panel/all-products"}
+                      to={"/restaurant-panel/all-products"}
                       className="whitespace-nowrap hidden md:block hover:bg-slate-100 p-2"
                       onClick={() => setMenuDisplay((prev) => !prev)}
                     >
-                      Merchant Panel
+                      Restaurant Panel
                     </Link>
                   )}
                   {user?.role === ROLE.DELIVERY && (
