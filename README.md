@@ -61,4 +61,4 @@ To run this project, you will need to add the following environment variables to
 
 ## Demo
 
-[Insert gif or link to demo](https://eatclubclone.vercel.app/)
+[https://eatclubclone.vercel.app](https://eatclubclone.vercel.app/)
