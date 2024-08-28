@@ -9,6 +9,8 @@ import SummaryApi from "../common";
 import { toast } from "react-toastify";
 import { setUserDetails } from "../store/userSlice";
 import ROLE from "../common/role";
+import logo from  "../assest/logo.png";
+
 import Context from "../context";
 
 const Header = () => {
@@ -57,7 +59,7 @@ const Header = () => {
         <div className="">
           <Link to={"/"}>
             <img
-              src="https://dwc6ndmngc4q3.cloudfront.net/20240620155323/assets/images/logo.png"
+              src={logo}
               alt="Brand Logo"
               className="w-32 p-4"
             />
